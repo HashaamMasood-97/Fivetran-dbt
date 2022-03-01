@@ -9,7 +9,7 @@
 
 {{ config(materialized='table') }}
 
-with s3.fivetran as (
+with fivetran as (
 
     select 1 as id
     union all
@@ -18,7 +18,7 @@ with s3.fivetran as (
 )
 
 select *
-from s3.fivetran
+from fivetram
 
 /*
     Uncomment the line below to remove records with null `id` values
