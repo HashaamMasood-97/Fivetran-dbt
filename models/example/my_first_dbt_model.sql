@@ -9,7 +9,7 @@
 
 {{ config(materialized='table') }}
 
-with fivetran as (
+with hashaam1 as (
 
     select 1 as id
     union all
@@ -18,10 +18,10 @@ with fivetran as (
 )
 
 select *
-from fivetran
+from hashaam1
 
 /*
     Uncomment the line below to remove records with null `id` values
 */
 
-/* where id is not null */
+ where id is not null
