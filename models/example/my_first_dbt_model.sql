@@ -18,7 +18,7 @@ with fivetran as (
 )
 
 select *
-from fivetram
+from fivetran
 
 /*
     Uncomment the line below to remove records with null `id` values
