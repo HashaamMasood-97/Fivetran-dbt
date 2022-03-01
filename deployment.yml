@@ -30,7 +30,7 @@ jobs:
 
 
   - name: check
-   schedule: 30 7 * * 1-5 # The example will run every weekday at 7:30am.
-   steps:
+    schedule: 30 7 * * 1-5 # The example will run every weekday at 7:30am.
+    steps:
      - name: test models
        command: dbt test      
