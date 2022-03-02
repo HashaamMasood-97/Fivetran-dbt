@@ -43,10 +43,5 @@ jobs:
      - name: run models
        command: dbt run --models my_fifth_dbt_model my_sixth_dbt_model # This example will run two specific models.
 
- - name: 56_dbt1
-   targetName: dev
-   schedule: 0 0 * * * # This example will run every day at midnight.
-   steps:
-     - name: run models
-       command: dbt run --models my_fifth_model my_sixth_model # This example will run two specific models.
+
       
