@@ -2,9 +2,9 @@
 
 with hashaam3 as (
 
-    select 1 as id
+    select 1 as rfids
     union all
-    select null as id
+    select null as rfids
 
 )
 
