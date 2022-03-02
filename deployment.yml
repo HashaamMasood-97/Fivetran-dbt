@@ -34,4 +34,17 @@ jobs:
    schedule: 30 7 * * 1-5 # The example will run every weekday at 7:30am.
    steps:
      - name: test models
-       command: dbt test      
+       command: dbt test
+
+ - name: 56_dbt
+   schedule: 0 0 * * * # This example will run every day at midnight.
+   steps:
+     - name: run models
+       command: dbt run --models my_fifth_dbt_model my_sixth_dbt_model # This example will run two specific models.
+
+ - name: 56_dbt1
+   schedule: 0 0 * * * # This example will run every day at midnight.
+   steps:
+     - name: run models
+       command: dbt run --models my_fifth_model my_sixth_model # This example will run two specific models.
+      
